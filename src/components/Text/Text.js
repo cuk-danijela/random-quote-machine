@@ -1,18 +1,16 @@
 import React from 'react';
 import './Text.css';
+import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa';
 
+const Text = props => {
 
-class Text extends React.Component {
-
-    render() {
-        return (
-            <>
-                <div class="quote-text">
-                    <i class="fa fa-quote-left"> </i><span id="text"></span>
-                </div>
-            </>
-        );
-    }
+    return (
+        <div className="quote-text">
+            <FaQuoteLeft />
+            <span id="text"> {props.get_text} </span>
+            <FaQuoteRight />
+        </div>
+    );
 }
 
 export default Text;
