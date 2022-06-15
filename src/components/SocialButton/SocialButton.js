@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './SocialButton.css';
 import axios from 'axios';
-import { FaTwitter, FaFacebookF } from 'react-icons/fa'
+import { FaAngleDoubleRight } from 'react-icons/fa'
 
 const END_POINT = 'https://gist.githubusercontent.com/camperbot/5a022b72e96c4c9585c32bf6a75f62d9/raw/e3c6895ce42069f0ee7e991229064f167fe8ccdc/quotes.json';
 
@@ -29,9 +29,9 @@ class SocialButton extends Component {
     render() {
         return (
             <div className="buttons">
-                <a className="button" href="twitter.com/intent/tweet" id="tweet-quote" title="Tweet this quote!" target="_blank"> <FaTwitter /> </a>
-                <a className="button" href="facebook.com/intent/post" id="facebook-quote" title="Post this quote!" target="_blank"> <FaFacebookF /> </a>
-                <button className="button" id="new-quote" onClick={this.getQuotes}>Next quote</button>
+                {/* <a className="button" href="twitter.com/intent/tweet" id="tweet-quote" title="Tweet this quote!" target="_blank"> <FaTwitter /> </a> */}
+                {/* <a className="button" href="facebook.com/intent/post" id="facebook-quote" title="Post this quote!" target="_blank"> <FaFacebookF /> </a> */}
+                <button className="button" id="new-quote" onClick={this.getQuotes}><FaAngleDoubleRight/></button>
             </div>
         );
     }
